@@ -22,7 +22,7 @@
             <li><a href="#education">education</a></li>
             <li><a href="#samples">samples</a></li>
             <li><a href="#contact">contact</a></li>
-            <li><a href="#">resume</a></li>
+            <li><a href="#"><ion-icon size="small" name="download-outline"></ion-icon> resume</a></li>
         </ul>
     </nav>
 
@@ -33,11 +33,10 @@
             <h2>Programming student, graphic designer, comic artist, nerd</h2>
             <div id="about-row">
                 <div id="about-right">
-                    <img src="img/300-self.png" alt="This is me!" width="300" height="400"
-                        style="height: 100%; width: 100%; object-fit: contain">
+                    <img src="img/300-self.png" alt="This is me!" width="300" height="400" class="pic">
                 </div>
                 <div id="about-left">
-                    <p>Oh hi, I almost didn't see you there! Welcome to my humble page, I hope you
+                    <p class="firstline">Oh hi, I almost didn't see you there! Welcome to my humble page, I hope you
                         enjoy your stay.</p>
                     <p>I am a human mess called Iris, and I study Video Game Programming in
                         Taitotalo, Helsinki. I started in November 2021, and will graduate at the end of 2023, should
@@ -48,7 +47,8 @@
                         actually
                         work.
                     </p>
-                    <p>Most recently I've been curious of: tabletop RPGs, JavaScript, Brandon Sanderson's Mistborn and
+                    <p class="lastline">Most recently I've been curious of: tabletop RPGs, JavaScript, Brandon
+                        Sanderson's Mistborn and
                         gradient maps!</p>
                 </div>
             </div>
@@ -57,10 +57,28 @@
 
     <div id="education">
         <h3>2. education</h3>
-        <p> This is the bit where I talk about the things we're learning about in school. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Dicta obcaecati facere soluta quibusdam in porro sed mollitia iure beatae,
-            dolorum tenetur quod dolores consectetur tempora ad laboriosam voluptate voluptas sequi!
-        </p>
+        <div id="education-card">
+            <p>In Taitotalo we are mostly using Unity and Visual Studio Code in our game projects. The projects I've
+                been in
+                we've used Plastic and Sourcetree for version control. Our most used language is C# and we've learned
+                basics
+                in JavaScript.
+            </p>
+            <h4>Earlier education</h4>
+            <p>Bachelor of Culture and Arts in Media<br>
+                Specialization option Graphic Design<br>
+                Metropolia University of Applied Sciences<br>
+                2012-2019</p>
+            <p>Comic Art Studies<br>
+                Orivesi College of Arts<br>
+                2011-2012</p>
+            <p>A levels<br>
+                Jyväskylän Lyseo Upper Secondary School<br>
+                2007-2010
+            </p>
+            <p>For more detailed background and your convenience, my resume is available for <a href="#">download
+                    <ion-icon size="medium" name="download-outline"></ion-icon></a>.</p>
+        </div>
     </div>
 
     <div id="samples">
@@ -68,18 +86,25 @@
         <div id="reel">
             <nav>
                 <ul>
-                    <li>2D Platformer</li>
-                    <li>Educational Game</li>
-                    <li>This page!</li>
-                    <li>Art Portfolio</li>
+                    <li><a href="#">2D Platformer</a></li>
+                    <li><a href="#">Educational Game</a></li>
+                    <li><a href="#">This page!</a></li>
+                    <li><a href="#">Art Portfolio</a></li>
                 </ul>
             </nav>
             <div id="selector">
-                1 2 3 4 5
+                <div id="thumb1" class="thumbnail"></div>
+                <div id="thumb2" class="thumbnail"></div>
+                <div id="thumb3" class="thumbnail"></div>
+                <div id="thumb4" class="thumbnail"></div>
+                <div id="thumb5" class="thumbnail"></div>
             </div>
             <div id="reel-row">
                 <div id="reel-left"></div>
                 <div id="reel-right"></div>
+            </div>
+            <div id="reel-bottom">
+                <p>Link to the project</p>
             </div>
         </div>
     </div>
@@ -95,7 +120,8 @@
     <footer>
         <p>Page last updated in December of 2022.</p>
     </footer>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
